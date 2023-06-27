@@ -1,0 +1,10 @@
+import RPi.GPIO as GPIO
+import time
+GPIO.setmode(GPIO.BOARD)
+
+GPIO_TRIGGER=12
+GPIO_ECHO=18
+
+GPIO.setup(GPIO_TRIGGER, GPIO.OUT)
+GPIO.setup(GPIO_ECHO,GPIO.IN)
+
